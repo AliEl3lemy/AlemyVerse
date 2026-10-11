@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlemyVerse | Python Projects</title>
+    <style>
+        /* الدارك ثيم المتناسق مع موقعك */
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .back-btn {
+            display: inline-block;
+            color: #38bdf8;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .back-btn:hover {
+            color: #7dd3fc;
+        }
+
+        h1 {
+            color: #f8fafc;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            border-color: #38bdf8;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #f8fafc;
+        }
+        .project-card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+        
+        .tags {
+            margin: 20px 0;
+        }
+        .tag {
+            background-color: #0c4a6e;
+            color: #7dd3fc;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            display: inline-block;
+        }
+
+        .github-btn {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .github-btn:hover {
+            background-color: #0284c7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to AlemyVerse</a>
+        
+        <h1>Python Automation & Scripts</h1>
+        <p class="subtitle">A collection of my Python projects focusing on automation, data extraction, and analysis.</p>
+
+        <div class="projects-grid">
+            
+            <!-- Project 1: Web Scraper -->
+            <div class="project-card">
+                <h3>1. Web Scraping Automation</h3>
+                <p>A Python script built to automatically extract quote data and author names from websites. The script processes the raw HTML and exports clean, organized data directly into an Excel (CSV) file.</p>
+                
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">BeautifulSoup4</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Data Extraction</span>
+                </div>
+
+                <!-- حط لينك الـ GitHub بتاعك هنا مكان الرابط ده -->
+                <a href="https://github.com/AliEl3lemy/AlemyVerse/commit/76d5d6d3f7536f1544057909598e993bcca0ae7d" target="_blank" class="github-btn">View on GitHub</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
